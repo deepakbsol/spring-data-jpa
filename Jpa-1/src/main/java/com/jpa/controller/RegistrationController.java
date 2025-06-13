@@ -77,4 +77,8 @@ public class RegistrationController {
     public String apiTest() {
     	return "Api Test";
     }
+    @GetMapping(value = "test")
+    public String test() {
+    	return "Test";
+    }
 }
