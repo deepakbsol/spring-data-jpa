@@ -73,4 +73,8 @@ public class RegistrationController {
         return this.registrationService.findByFirstNameAndSem(firstName,sem);
     }
 
+    @GetMapping(value = "test")
+    public String test() {
+    	return "Test";
+    }
 }
