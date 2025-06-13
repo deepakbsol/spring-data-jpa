@@ -73,4 +73,8 @@ public class RegistrationController {
         return this.registrationService.findByFirstNameAndSem(firstName,sem);
     }
 
+    @GetMapping(value = "test/api")
+    public String apiTest() {
+    	return "Api Test";
+    }
 }
